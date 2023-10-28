@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root3" prefHeight="691.0" prefWidth="1181.0" style="-fx-background-radius: 20px; -fx-background-color: white;" styleClass="AgentForm" stylesheets="@../css/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Roosalu.Controller.EmployeeManageController">
+   <children>
+      <Label layoutX="436.0" layoutY="20.0" prefHeight="51.0" prefWidth="420.0" text="Employee Manage">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="65.0" fitWidth="62.0" layoutX="372.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Employee.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="131.0" layoutY="242.0" />
+      <Label layoutX="139.0" layoutY="339.0" />
+      <AnchorPane layoutX="61.0" layoutY="74.0" prefHeight="572.0" prefWidth="1072.0" style="-fx-background-radius: 20px; -fx-background-color: white;" styleClass="AgentForm" stylesheets="@../css/Style.css">
+         <children>
+            <Label layoutX="23.0" layoutY="59.0" text="Employee Id:">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Label>
+            <Label layoutX="385.0" layoutY="56.0" text="Name:">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Label>
+            <Label layoutX="385.0" layoutY="183.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Label>
+            <Label layoutX="381.0" layoutY="117.0" text="Contatct No:">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Label>
+            <Label layoutX="88.0" layoutY="106.0" />
+            <Label layoutX="26.0" layoutY="119.0" text="NIC:">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Label>
+            <Label layoutX="20.0" layoutY="182.0" text="Address:">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Label>
+            <Button fx:id="btnupdate" layoutX="825.0" layoutY="137.0" mnemonicParsing="false" onAction="#btnUpdateEmployeeOnAction" prefHeight="33.0" prefWidth="120.0" styleClass="AgentFormButton" stylesheets="@../css/Style.css" text="Update" />
+            <Button fx:id="btnsave" layoutX="823.0" layoutY="89.0" mnemonicParsing="false" onAction="#btnsaveEmployeeOnAction" prefHeight="33.0" prefWidth="120.0" styleClass="AgentFormButton" stylesheets="@../css/Style.css" text="Save" />
+            <Button fx:id="btndelete" layoutX="824.0" layoutY="181.0" mnemonicParsing="false" onAction="#btnDeleteEmployeeOnAction" prefHeight="33.0" prefWidth="120.0" styleClass="AgentFormButton" stylesheets="@../css/Style.css" text="Delete" />
+            <TextField fx:id="txtSearch" layoutX="738.0" layoutY="38.0" onAction="#btnEmployeeSearchOnAction" prefHeight="31.0" prefWidth="320.0" promptText="Search Here...." />
+            <ImageView fitHeight="33.0" fitWidth="41.0" layoutX="709.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Search.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnSalary" layoutX="752.0" layoutY="231.0" mnemonicParsing="false" onAction="#btnCalculateOnAction" prefHeight="51.0" prefWidth="292.0" style="-fx-background-color: #38ada9; -fx-background-radius: 20px;" text="Mark Attendance Here................" />
+            <JFXTextField fx:id="txtemployeeid" layoutX="178.0" layoutY="51.0" onKeyReleased="#txtEmployeeIdOnAction" promptText="Exxx" />
+            <JFXTextField fx:id="txtemployeenic" layoutX="178.0" layoutY="109.0" onKeyReleased="#txtEmployeeNic" promptText="NIC" />
+            <JFXTextField fx:id="txtemployeeaddress" layoutX="177.0" layoutY="167.0" onKeyReleased="#txtEmployeeAddress" promptText="Address" />
+            <JFXTextField fx:id="txtemployeename" layoutX="531.0" layoutY="51.0" onKeyReleased="#txtEmployeeName" promptText="Name" />
+            <JFXTextField fx:id="txtemployeecontactNo" layoutX="535.0" layoutY="106.0" onKeyReleased="#txtEmployeeContatctNo" promptText="+94" />
+            <JFXTextField fx:id="txtemployeeslarayperhour" layoutX="536.0" layoutY="175.0" onKeyReleased="#txtEmployeeSalaryPerHour" promptText="SalaryPerHour" />
+            <TableView fx:id="tblemployee" layoutX="37.0" layoutY="292.0" prefHeight="252.0" prefWidth="987.0">
+              <columns>
+                <TableColumn fx:id="colemployeeId" prefWidth="141.0" text="Employee Id" />
+                  <TableColumn fx:id="colemployeenic" prefWidth="158.0" text="NIC" />
+                  <TableColumn fx:id="colemployeeaddress" prefWidth="181.0" text="Address" />
+                  <TableColumn fx:id="colemployeename" prefWidth="114.0" text="Name" />
+                  <TableColumn fx:id="colemployeecontactNo" prefWidth="182.0" text="Contact No" />
+                  <TableColumn fx:id="colemplyeesalaryperHour" prefWidth="210.0" text="Salary Per Hour" />
+              </columns>
+            </TableView>
+            <Label layoutX="376.0" layoutY="181.0" text="Salary Per Hour:">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

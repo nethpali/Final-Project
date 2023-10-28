@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="691.0" prefWidth="1181.0" style="-fx-background-radius: 20px; -fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Roosalu.Controller.PlaceOrderController">
+   <children>
+      <Label layoutX="449.0" layoutY="33.0" text="Place Order">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="56.0" fitWidth="59.0" layoutX="382.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Order.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="66.0" layoutY="89.0" prefHeight="572.0" prefWidth="1072.0" style="-fx-background-radius: 20px;" styleClass="AgentForm" stylesheets="@../css/Style.css">
+         <children>
+            <Label layoutX="50.0" layoutY="42.0" prefHeight="21.0" prefWidth="160.0" text="Order Id:">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Label>
+            <Label layoutX="49.0" layoutY="94.0" prefHeight="21.0" prefWidth="160.0" text="Agent Id:">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Label>
+            <Label layoutX="361.0" layoutY="38.0" prefHeight="21.0" prefWidth="160.0" text="Description:">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Label>
+            <Label layoutX="48.0" layoutY="150.0" prefHeight="21.0" prefWidth="160.0" text="Deadline:">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Label>
+            <Button layoutX="886.0" layoutY="78.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="112.0" styleClass="AgentFormButton" stylesheets="@../css/Style.css" text="Save" />
+            <Button layoutX="882.0" layoutY="123.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="119.0" styleClass="AgentFormButton" stylesheets="@../css/Style.css" text="Update" />
+            <TextField layoutX="689.0" layoutY="179.0" prefHeight="31.0" prefWidth="318.0" promptText="Search Here" />
+            <ImageView fitHeight="30.0" fitWidth="37.0" layoutX="662.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Search.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="749.0" layoutY="33.0" prefHeight="21.0" prefWidth="160.0" text="Date:">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXTextField layoutX="150.0" layoutY="33.0" prefHeight="31.0" prefWidth="184.0" promptText="Oxxx" />
+            <JFXTextField layoutX="150.0" layoutY="139.0" prefHeight="31.0" prefWidth="201.0" promptText="DD/MM/YY" />
+            <JFXTextField layoutX="478.0" layoutY="33.0" prefHeight="31.0" prefWidth="201.0" />
+            <ComboBox layoutX="146.0" layoutY="94.0" prefHeight="31.0" prefWidth="201.0" />
+            <JFXButton layoutX="369.0" layoutY="94.0" prefHeight="31.0" prefWidth="98.0" styleClass="AgentFormButton" stylesheets="@../css/Style.css" text="Add Agent" />
+            <TableView layoutX="24.0" layoutY="219.0" prefHeight="346.0" prefWidth="727.0">
+              <columns>
+                <TableColumn prefWidth="143.0" text="Order Id" />
+                <TableColumn prefWidth="162.0" text="Agent Id" />
+                  <TableColumn prefWidth="157.0" text="Deadline" />
+                  <TableColumn prefWidth="143.0" text="Description" />
+                  <TableColumn prefWidth="122.0" text="Date" />
+              </columns>
+            </TableView>
+            <JFXTextField layoutX="760.0" layoutY="492.0" prefHeight="31.0" prefWidth="160.0" promptText="Oxxx" />
+            <Label layoutX="765.0" layoutY="471.0" text="Order Id" />
+            <JFXButton layoutX="935.0" layoutY="496.0" prefHeight="41.0" prefWidth="119.0" style="-fx-background-color: red;" styleClass="AgentFormButton" text="Delete Order" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

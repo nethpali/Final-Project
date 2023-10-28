@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="691.0" prefWidth="1181.0" style="-fx-background-radius: 20px; -fx-background-color: white;" styleClass="AgentForm" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Roosalu.Controller.RawMaterialManagmentController">
+   <children>
+      <AnchorPane layoutX="55.0" layoutY="85.0" prefHeight="572.0" prefWidth="1072.0" style="-fx-background-radius: 20px; -fx-background-color: white;" styleClass="AgentForm" stylesheets="@../css/Style.css">
+         <children>
+            <Label layoutX="23.0" layoutY="132.0" text="Raw Material Id:">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="78.0" layoutY="111.0">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Button layoutX="940.0" layoutY="100.0" mnemonicParsing="false" onAction="#btnRawMaterialAddOnAction" prefHeight="33.0" prefWidth="107.0" styleClass="AgentFormButton" stylesheets="@../css/Style.css" text="Save" />
+            <Button layoutX="940.0" layoutY="141.0" mnemonicParsing="false" onAction="#btnRawMaterialUpdateOnAction" prefHeight="33.0" prefWidth="107.0" styleClass="AgentFormButton" stylesheets="@../css/Style.css" text="Update" />
+            <Button layoutX="940.0" layoutY="180.0" mnemonicParsing="false" onAction="#btnRawMaterialDeleteOnAction" prefHeight="33.0" prefWidth="107.0" styleClass="AgentFormButton" stylesheets="@../css/Style.css" text="Delete" />
+            <TextField fx:id="txtSearchRawMaterail" layoutX="645.0" layoutY="226.0" onAction="#txtRawMaterialSearchOnAction" prefHeight="31.0" prefWidth="326.0" promptText="Search Here" />
+            <ImageView fitHeight="31.0" fitWidth="29.0" layoutX="614.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Search.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="txtRawMaterialId" layoutX="212.0" layoutY="127.0" prefHeight="31.0" prefWidth="187.0" promptText="Rxxx" />
+            <Label layoutX="78.0" layoutY="165.0">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="196.0" text=" Raw Material Type:">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="457.0" layoutY="126.0" text="Quantity:">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtRawMaterialQty" layoutX="566.0" layoutY="118.0" prefHeight="31.0" prefWidth="213.0" />
+            <TableView fx:id="tblRawMaterial" layoutX="19.0" layoutY="263.0" prefHeight="293.0" prefWidth="953.0">
+              <columns>
+                <TableColumn fx:id="colRawMaterialId" prefWidth="166.0" text="Raw Material Id" />
+                  <TableColumn fx:id="colAgentId" prefWidth="164.0" text="Agent Id" />
+                  <TableColumn fx:id="colRawMaterialType" prefWidth="215.0" text="Raw Material Type" />
+                  <TableColumn fx:id="colRawMaterialqty" prefWidth="202.0" text="Quantity" />
+                  <TableColumn fx:id="colUnitPrice" prefWidth="205.0" text="Unit Price" />
+              </columns>
+            </TableView>
+            <ComboBox fx:id="cmbRawMaterialType" layoutX="215.0" layoutY="196.0" prefHeight="31.0" prefWidth="213.0" />
+            <Label layoutX="26.0" layoutY="65.0" text="Agent Id:">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cmbAgentId" layoutX="210.0" layoutY="63.0" onAction="#cmbAgentIdOnAction" prefHeight="31.0" prefWidth="223.0" />
+            <Label layoutX="462.0" layoutY="62.0" text="Unit Price:">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtUnitPrice" layoutX="568.0" layoutY="57.0" prefHeight="31.0" prefWidth="213.0" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="421.0" layoutY="12.0" prefHeight="53.0" prefWidth="347.0" text="Manage Raw Material">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="53.0" fitWidth="98.0" layoutX="362.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Raw%20Material.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

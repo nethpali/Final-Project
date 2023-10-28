@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane opacity="0.84" prefHeight="691.0" prefWidth="1181.0" style="-fx-background-color: #c7ecee; -fx-background-radius: 20px;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Roosalu.Controller.DashBoardViewController">
+   <children>
+      <AnchorPane layoutX="27.0" layoutY="40.0" prefHeight="407.0" prefWidth="367.0" style="-fx-background-color: #808e9b; -fx-background-radius: 20px;">
+         <children>
+            <Label layoutX="82.0" layoutY="14.0" text="Production Downtime">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="8.0" layoutY="45.0" prefHeight="350.0" prefWidth="353.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
+               <children>
+                  <ImageView fitHeight="169.0" fitWidth="293.0" layoutX="26.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/download%20(2).png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="178.0" fitWidth="219.0" layoutX="47.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/download%20(1).png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+      <AnchorPane layoutX="415.0" layoutY="49.0" prefHeight="193.0" prefWidth="467.0" style="-fx-background-color: #808e9b; -fx-background-radius: 20px;">
+         <children>
+            <Label layoutX="40.0" layoutY="7.0" prefHeight="21.0" prefWidth="270.0" text="Daily Employee Count">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="29.0" layoutY="44.0" prefHeight="135.0" prefWidth="410.0" style="-fx-background-color: #aaa69d; -fx-background-radius: 20px;">
+               <children>
+                  <ImageView fitHeight="86.0" fitWidth="89.0" layoutX="17.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8-standing-man-50.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="17.0" layoutY="90.0" prefHeight="35.0" prefWidth="115.0" text="Count: 500">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="86.0" fitWidth="89.0" layoutX="41.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8-standing-man-50.png" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane layoutX="145.0" layoutY="10.0" prefHeight="116.0" prefWidth="240.0" style="-fx-background-color: #34ace0; -fx-background-radius: 20px;">
+                     <children>
+                        <Label layoutX="26.0" layoutY="15.0" text="Employee ratio per machines">
+                           <font>
+                              <Font name="HoloLens MDL2 Assets" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="64.0" layoutY="38.0" prefHeight="62.0" prefWidth="115.0" text="   1   :  3">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="54.0" fitWidth="54.0" layoutX="19.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/icons8-standing-man-50.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="43.0" fitWidth="47.0" layoutX="174.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Production.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+      <AnchorPane layoutX="417.0" layoutY="258.0" prefHeight="187.0" prefWidth="460.0" style="-fx-background-color: #808e9b; -fx-background-radius: 20px;">
+         <children>
+            <Label layoutX="29.0" layoutY="-22.0" text="Total Revenue" textFill="#e4cdcd">
+               <font>
+                  <Font name="Javanese Text" size="28.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="35.0" layoutY="38.0" prefHeight="135.0" prefWidth="169.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
+               <children>
+                  <ImageView fitHeight="99.0" fitWidth="125.0" layoutX="22.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Screenshot%20(17).png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="55.0" layoutY="4.0" text="\$185000" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="239.0" layoutY="-19.0" textFill="#e4cdcd">
+               <font>
+                  <Font name="Javanese Text" size="28.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="230.0" layoutY="38.0" prefHeight="135.0" prefWidth="169.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
+               <children>
+                  <Label layoutX="64.0" layoutY="9.0" text="50%" />
+                  <ImageView fitHeight="86.0" fitWidth="176.0" layoutX="7.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Screenshot%20(18).png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Label layoutX="230.0" layoutY="-20.0" prefHeight="78.0" prefWidth="178.0" text="Profit Margin" textFill="#e4cdcd">
+               <font>
+                  <Font name="Javanese Text" size="28.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane layoutX="417.0" layoutY="467.0" prefHeight="187.0" prefWidth="460.0" style="-fx-background-color: #808e9b; -fx-background-radius: 20px;">
+         <children>
+            <TextField layoutX="27.0" layoutY="11.0" prefHeight="54.0" prefWidth="403.0" promptText="Cotton Threads On Hand                         " style="-fx-background-color: #34495e; -fx-background-radius: 20px;" />
+            <ImageView fitHeight="93.0" fitWidth="86.0" layoutX="36.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-clew-48.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="73.0" fitWidth="62.0" layoutX="91.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-clew-50.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="162.0" layoutY="110.0" prefHeight="25.0" prefWidth="62.0" text="1000" textFill="#140606">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane layoutX="895.0" layoutY="34.0" prefHeight="624.0" prefWidth="254.0" style="-fx-background-color: #808e9b; -fx-background-radius: 20px;">
+         <children>
+            <AnchorPane layoutX="15.0" layoutY="100.0" prefHeight="502.0" prefWidth="227.0" style="-fx-background-color: #f7f1e3; -fx-background-radius: 20px;">
+               <children>
+                  <Label layoutX="81.0" layoutY="-6.0">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="16.0" layoutY="41.0" prefHeight="31.0" prefWidth="28.0" style="-fx-background-radius: 20px; -fx-background-color: #FEA47F;" />
+                  <Label layoutX="35.0" layoutY="7.0" text="Colour Schema">
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="16.0" layoutY="80.0" prefHeight="31.0" prefWidth="28.0" style="-fx-background-radius: 20px; -fx-background-color: #B33771;" />
+                  <AnchorPane layoutX="17.0" layoutY="121.0" prefHeight="31.0" prefWidth="28.0" style="-fx-background-radius: 20px; -fx-background-color: #82589F;" />
+                  <AnchorPane layoutX="17.0" layoutY="162.0" prefHeight="31.0" prefWidth="28.0" style="-fx-background-radius: 20px; -fx-background-color: #EA2027;" />
+                  <AnchorPane layoutX="17.0" layoutY="202.0" prefHeight="31.0" prefWidth="28.0" style="-fx-background-radius: 20px; -fx-background-color: #C4E538;" />
+                  <AnchorPane layoutX="17.0" layoutY="243.0" prefHeight="31.0" prefWidth="28.0" style="-fx-background-radius: 20px; -fx-background-color: #833471;" />
+                  <AnchorPane layoutX="18.0" layoutY="285.0" prefHeight="31.0" prefWidth="28.0" style="-fx-background-radius: 20px; -fx-background-color: #32ff7e;" />
+                  <AnchorPane layoutX="18.0" layoutY="327.0" prefHeight="31.0" prefWidth="28.0" style="-fx-background-radius: 20px; -fx-background-color: #34ace0;" />
+                  <AnchorPane layoutX="18.0" layoutY="369.0" prefHeight="31.0" prefWidth="28.0" style="-fx-background-radius: 20px; -fx-background-color: #341f97;" />
+                  <AnchorPane layoutX="19.0" layoutY="409.0" prefHeight="31.0" prefWidth="28.0" style="-fx-background-radius: 20px; -fx-background-color: #fbc531;" />
+                  <AnchorPane layoutX="19.0" layoutY="449.0" prefHeight="31.0" prefWidth="28.0" style="-fx-background-radius: 20px; -fx-background-color: #3498db;" />
+                  <Label layoutX="60.0" layoutY="46.0" text="Geogia Pink" />
+                  <Label layoutX="61.0" layoutY="80.0" text="Fiery Fushsia" />
+                  <Label layoutX="59.0" layoutY="122.0" text="Highlight Lave" />
+                  <Label layoutX="60.0" layoutY="167.0" text="Red Pigment" />
+                  <Label layoutX="61.0" layoutY="205.0" text="Energos" />
+                  <Label layoutX="61.0" layoutY="248.0" text="Holly" />
+                  <Label layoutX="57.0" layoutY="284.0" text="Winter Green" />
+                  <Label layoutX="60.0" layoutY="328.0" text="Summer Sky" />
+                  <Label layoutX="60.0" layoutY="374.0" text="BlueBell" />
+                  <Label layoutX="59.0" layoutY="413.0" text="Rise-n-Shine" />
+                  <Label layoutX="57.0" layoutY="454.0" text="Peter River" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="27.0" layoutY="-9.0" prefHeight="86.0" prefWidth="205.0" text="Quantity On Hand" textFill="#140606">
+               <font>
+                  <Font name="Comic Sans MS" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="69.0" layoutY="59.0" prefHeight="36.0" prefWidth="178.0" text="Apperal" textFill="#e1cdcd">
+               <font>
+                  <Font name="Segoe Print" size="24.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane layoutX="23.0" layoutY="455.0" prefHeight="193.0" prefWidth="375.0" style="-fx-background-color: #808e9b; -fx-background-radius: 20px;">
+         <children>
+            <Label layoutX="57.0" layoutY="16.0">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="18.0" layoutY="29.0" prefHeight="135.0" prefWidth="339.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
+               <children>
+                  <ImageView fitHeight="106.0" fitWidth="115.0" layoutX="28.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/fotor_2023-4-5_13_29_0.jpg" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane layoutX="141.0" layoutY="15.0" prefHeight="106.0" prefWidth="189.0" style="-fx-background-radius: 20px; -fx-background-color: #706fd3;">
+                     <children>
+                        <Label layoutX="3.0" layoutY="16.0" prefHeight="35.0" prefWidth="178.0" text="Factory Efficency">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="43.0" layoutY="55.0" prefHeight="21.0" prefWidth="106.0" text="Per Day">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+.Button{
+    -fx-border-radius: 20px 20px 20px 20px;
+    -fx-background-radius: 20px 20px 20px 20px;
+    -fx-background-color:#00cec9;
+    -fx-font-size: 24;
+}
+.loginform{
+    -fx-border-radius:20px 20px 20px 20px;
+    -fx-background-radius:20px 20px 20px 20px;
+    -fx-background-color:#8395a7 ;
+    -fx-font-size: 24;
+}
+
+.txtBox{
+    -fx-border-radius:20px 20px 20px 20px;
+    -fx-background-radius:20px 20px 20px 20px;
+    /*-fx-background-color:#d1d8e0;*/
+}
+.logInButton {
+    -fx-border-radius: 20px 20px 20px 20px;
+    -fx-background-radius: 20px 20px 20px 20px;
+    -fx-background-color: #67e6dc;
+}
+.DashboardvBox{
+    -fx-border-radius:0px 20px 20px 0px;
+    -fx-background-radius: 0px 20px 20px 0px;
+}
+.DashBoardButton:hover{
+    -fx-border-radius: 0px 20px 20px 0px;
+    -fx-background-radius: 0px 20px 20px 0px;
+}
+.DashBoard{
+    -fx-border-radius: 20px 20px 20px 20px;
+    -fx-background-radius: 20px 20px 20px 20px;
+}
+.AgentForm{
+    -fx-background-color:#c7ecee;
+}
+.AgentFormButton{
+    -fx-border-radius: 20px 20px 20px 20px;
+    -fx-background-radius: 20px 20px 20px 20px;
+    -fx-border-color: #ced6e0;
+}
+.loginformBackGroung {
+    -fx-border-color: #3dc1d3 #63cdda #546de5 #778beb;
+}
